@@ -243,6 +243,11 @@ body {
 .info-box {
   text-align: center;
   padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-grow: 1;
+  margin-left: 72px;
 }
 
 .line {
@@ -267,4 +272,48 @@ body {
   margin-top: 5px;
   font-size: 16px;
   color: #333;
+}
+.info-number {
+  color: black;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.rating-item {
+  text-align: center;
+  margin: 20px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.rating-logo {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.divider {
+  width: 50%;
+  margin: 10px auto;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.rating-score {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 5px;
+}
+
+.score {
+  font-weight: bold;
+}
+
+.star-set .star {
+  color: orange;
 }
