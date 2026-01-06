@@ -56,24 +56,95 @@
 
         <!-- Main Content -->
         <main class="content">
-            <div class="content-header">
-                <h1>Questions</h1>
-                <p class="page-description">Assessment questionnaire</p>
-            </div>
-
-            <div class="content-body">
-                <div class="info-card">
-                    <i class="fas fa-info-circle"></i>
-                    <h3>Page Information</h3>
-                    <p>This page is part of the Ourcba DTC application system. The full implementation includes form fields, data tables, and interactive elements based on the Figma design.</p>
+            <div class="questions-container">
+                <div class="question-section">
+                    <div class="question-header">
+                        <h3>Are you Married/Common Law?</h3>
+                        <span class="last-modified">Last Modified - 2 week ago</span>
+                    </div>
+                    <button class="status-btn">NONE</button>
                 </div>
 
-                <div class="placeholder-content">
-                    <div class="placeholder-box">
-                        <i class="fas fa-image fa-3x"></i>
-                        <p>Content area for Questions</p>
-                        <span class="note">This section contains the main functionality and data display</span>
+                <div class="question-section">
+                    <div class="question-header">
+                        <h3>Do you have Children?</h3>
+                        <span class="last-modified">Last Modified - a week ago</span>
                     </div>
+                    <button class="status-btn">NONE</button>
+                </div>
+
+                <div class="question-section expanded">
+                    <div class="question-header">
+                        <h3>First Name</h3>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first-name-q">First Name</label>
+                            <input type="text" id="first-name-q" name="first-name" placeholder="Sanjay" value="Sanjay">
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name-q">Last Name</label>
+                            <input type="text" id="last-name-q" name="last-name" placeholder="User" value="User">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-section expanded">
+                    <div class="question-header">
+                        <h3>Over 18</h3>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="over-18">Over 18</label>
+                            <input type="text" id="over-18" name="over-18" placeholder="Yes" value="Yes">
+                        </div>
+                        <div class="form-group">
+                            <label for="dob-q">Date of Birth</label>
+                            <input type="date" id="dob-q" name="dob" value="1999-02-02">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-section expanded">
+                    <div class="question-header">
+                        <h3>Disability</h3>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="disability-q">Disability</label>
+                            <input type="text" id="disability-q" name="disability" placeholder="Diabetes" value="Diabetes">
+                        </div>
+                        <div class="form-group">
+                            <label for="email-q">Email</label>
+                            <input type="email" id="email-q" name="email" placeholder="sanjay@website.com" value="sanjay@website.com">
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn-invite">Invite</button>
+
+                <div class="question-section">
+                    <div class="question-header">
+                        <h3>How many people in your family are currently helping you or helped you in the past ten years?</h3>
+                        <span class="last-modified">Last Modified - 2 week ago</span>
+                    </div>
+                    <button class="status-btn">NONE</button>
+                </div>
+
+                <div class="question-section">
+                    <div class="question-header">
+                        <h3>Are you currently living with anyone in your family?</h3>
+                        <span class="last-modified">Last Modified - 2 week ago</span>
+                    </div>
+                    <button class="status-btn">NONE</button>
+                </div>
+
+                <div class="question-section">
+                    <div class="question-header">
+                        <h3>Do any of the family members mentioned (be specific) struggle with any form of difficulty. Like walking, anxiety, mental illness, or even digestive issues?</h3>
+                        <span class="last-modified">Last Modified - 2 week ago</span>
+                    </div>
+                    <button class="status-btn">NONE</button>
                 </div>
             </div>
         </main>
