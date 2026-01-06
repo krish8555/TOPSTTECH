@@ -58,21 +58,77 @@
         <main class="content">
             <div class="content-header">
                 <h1>Service Complaints</h1>
-                <p class="page-description">Service complaint documents</p>
+                <button class="btn-add"><i class="fas fa-plus"></i> File New Complaint</button>
             </div>
 
             <div class="content-body">
-                <div class="info-card">
-                    <i class="fas fa-info-circle"></i>
-                    <h3>Page Information</h3>
-                    <p>This page is part of the Ourcba DTC application system. The full implementation includes form fields, data tables, and interactive elements based on the Figma design.</p>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <i class="fas fa-exclamation-circle stat-icon"></i>
+                        <div class="stat-info">
+                            <h3>Total Complaints</h3>
+                            <p class="stat-value">24</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-hourglass-half stat-icon warning"></i>
+                        <div class="stat-info">
+                            <h3>Open</h3>
+                            <p class="stat-value">8</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-check-circle stat-icon success"></i>
+                        <div class="stat-info">
+                            <h3>Resolved</h3>
+                            <p class="stat-value">16</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-clock stat-icon"></i>
+                        <div class="stat-info">
+                            <h3>Avg Resolution</h3>
+                            <p class="stat-value">2.5 days</p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="placeholder-content">
-                    <div class="placeholder-box">
-                        <i class="fas fa-image fa-3x"></i>
-                        <p>Content area for Service Complaints</p>
-                        <span class="note">This section contains the main functionality and data display</span>
+                <div class="table-card">
+                    <h3>Complaint Log</h3>
+                    <div class="table-wrapper">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Complaint ID</th>
+                                    <th>Client Name</th>
+                                    <th>Issue Type</th>
+                                    <th>Submitted</th>
+                                    <th>Priority</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>#CMP-701</td>
+                                    <td>John Doe</td>
+                                    <td>Processing Delay</td>
+                                    <td>Jan 18, 2024</td>
+                                    <td><span class="status-badge danger">High</span></td>
+                                    <td><span class="status-badge pending">Open</span></td>
+                                    <td><button class="btn-view">View</button></td>
+                                </tr>
+                                <tr>
+                                    <td>#CMP-702</td>
+                                    <td>Jane Smith</td>
+                                    <td>Communication Issue</td>
+                                    <td>Jan 15, 2024</td>
+                                    <td><span class="status-badge warning">Medium</span></td>
+                                    <td><span class="status-badge completed">Resolved</span></td>
+                                    <td><button class="btn-view">View</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

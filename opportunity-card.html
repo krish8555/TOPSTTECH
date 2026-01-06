@@ -57,22 +57,78 @@
         <!-- Main Content -->
         <main class="content">
             <div class="content-header">
-                <h1>Opportunity Card</h1>
-                <p class="page-description">Opportunity management interface</p>
+                <h1>Opportunities</h1>
+                <button class="btn-add"><i class="fas fa-plus"></i> Create Opportunity</button>
             </div>
 
             <div class="content-body">
-                <div class="info-card">
-                    <i class="fas fa-info-circle"></i>
-                    <h3>Page Information</h3>
-                    <p>This page is part of the Ourcba DTC application system. The full implementation includes form fields, data tables, and interactive elements based on the Figma design.</p>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <i class="fas fa-bullseye stat-icon"></i>
+                        <div class="stat-info">
+                            <h3>Total Opportunities</h3>
+                            <p class="stat-value">156</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-fire stat-icon warning"></i>
+                        <div class="stat-info">
+                            <h3>Active</h3>
+                            <p class="stat-value">42</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-trophy stat-icon success"></i>
+                        <div class="stat-info">
+                            <h3>Closed Won</h3>
+                            <p class="stat-value">98</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-percentage stat-icon"></i>
+                        <div class="stat-info">
+                            <h3>Win Rate</h3>
+                            <p class="stat-value">63%</p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="placeholder-content">
-                    <div class="placeholder-box">
-                        <i class="fas fa-image fa-3x"></i>
-                        <p>Content area for Opportunity Card</p>
-                        <span class="note">This section contains the main functionality and data display</span>
+                <div class="table-card">
+                    <h3>Opportunity Pipeline</h3>
+                    <div class="table-wrapper">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Opp ID</th>
+                                    <th>Client Name</th>
+                                    <th>Value</th>
+                                    <th>Stage</th>
+                                    <th>Agent</th>
+                                    <th>Close Date</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>#OPP-801</td>
+                                    <td>John Doe</td>
+                                    <td>$2,500</td>
+                                    <td><span class="status-badge pending">Qualification</span></td>
+                                    <td>Agent Smith</td>
+                                    <td>Feb 15, 2024</td>
+                                    <td><button class="btn-view">View</button></td>
+                                </tr>
+                                <tr>
+                                    <td>#OPP-802</td>
+                                    <td>Jane Smith</td>
+                                    <td>$3,200</td>
+                                    <td><span class="status-badge approved">Proposal</span></td>
+                                    <td>Agent Jones</td>
+                                    <td>Jan 30, 2024</td>
+                                    <td><button class="btn-view">View</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

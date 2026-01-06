@@ -57,22 +57,55 @@
         <!-- Main Content -->
         <main class="content">
             <div class="content-header">
-                <h1>Report Page</h1>
-                <p class="page-description">Generated reports view</p>
+                <h1>Reports</h1>
+                <div class="filter-group">
+                    <select class="filter-select">
+                        <option>All Reports</option>
+                        <option>Monthly</option>
+                        <option>Quarterly</option>
+                        <option>Annual</option>
+                    </select>
+                    <button class="btn-add"><i class="fas fa-file-export"></i> Generate Report</button>
+                </div>
             </div>
 
             <div class="content-body">
-                <div class="info-card">
-                    <i class="fas fa-info-circle"></i>
-                    <h3>Page Information</h3>
-                    <p>This page is part of the Ourcba DTC application system. The full implementation includes form fields, data tables, and interactive elements based on the Figma design.</p>
-                </div>
-
-                <div class="placeholder-content">
-                    <div class="placeholder-box">
-                        <i class="fas fa-image fa-3x"></i>
-                        <p>Content area for Report Page</p>
-                        <span class="note">This section contains the main functionality and data display</span>
+                <div class="table-card">
+                    <h3>Generated Reports</h3>
+                    <div class="table-wrapper">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Report ID</th>
+                                    <th>Report Name</th>
+                                    <th>Type</th>
+                                    <th>Generated Date</th>
+                                    <th>Period</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>#RPT-001</td>
+                                    <td>Monthly Client Report</td>
+                                    <td>Client Analytics</td>
+                                    <td>Jan 20, 2024</td>
+                                    <td>Dec 2023</td>
+                                    <td><span class="status-badge completed">Ready</span></td>
+                                    <td><button class="btn-view">Download</button></td>
+                                </tr>
+                                <tr>
+                                    <td>#RPT-002</td>
+                                    <td>Quarterly Refunds</td>
+                                    <td>Financial</td>
+                                    <td>Jan 18, 2024</td>
+                                    <td>Q4 2023</td>
+                                    <td><span class="status-badge completed">Ready</span></td>
+                                    <td><button class="btn-view">Download</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

@@ -58,21 +58,46 @@
         <main class="content">
             <div class="content-header">
                 <h1>Meeting Schedule</h1>
-                <p class="page-description">Schedule and track meetings</p>
+                <button class="btn-add"><i class="fas fa-plus"></i> Schedule Meeting</button>
             </div>
 
             <div class="content-body">
-                <div class="info-card">
-                    <i class="fas fa-info-circle"></i>
-                    <h3>Page Information</h3>
-                    <p>This page is part of the Ourcba DTC application system. The full implementation includes form fields, data tables, and interactive elements based on the Figma design.</p>
-                </div>
-
-                <div class="placeholder-content">
-                    <div class="placeholder-box">
-                        <i class="fas fa-image fa-3x"></i>
-                        <p>Content area for Meeting Schedule</p>
-                        <span class="note">This section contains the main functionality and data display</span>
+                <div class="table-card">
+                    <h3>Upcoming Meetings</h3>
+                    <div class="table-wrapper">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Meeting ID</th>
+                                    <th>Title</th>
+                                    <th>Participants</th>
+                                    <th>Date & Time</th>
+                                    <th>Location/Link</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>#MTG-201</td>
+                                    <td>Client Consultation</td>
+                                    <td>John Doe, Agent Smith</td>
+                                    <td>Jan 22, 2024 2:00 PM</td>
+                                    <td>Zoom Meeting</td>
+                                    <td><span class="status-badge pending">Scheduled</span></td>
+                                    <td><button class="btn-view">View</button></td>
+                                </tr>
+                                <tr>
+                                    <td>#MTG-202</td>
+                                    <td>Team Review</td>
+                                    <td>All Agents</td>
+                                    <td>Jan 23, 2024 10:00 AM</td>
+                                    <td>Conference Room A</td>
+                                    <td><span class="status-badge approved">Confirmed</span></td>
+                                    <td><button class="btn-view">View</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

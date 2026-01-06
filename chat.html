@@ -55,24 +55,82 @@
         </aside>
 
         <!-- Main Content -->
-        <main class="content">
-            <div class="content-header">
-                <h1>Chat</h1>
-                <p class="page-description">Real-time messaging system</p>
-            </div>
-
-            <div class="content-body">
-                <div class="info-card">
-                    <i class="fas fa-info-circle"></i>
-                    <h3>Page Information</h3>
-                    <p>This page is part of the Ourcba DTC application system. The full implementation includes form fields, data tables, and interactive elements based on the Figma design.</p>
+        <main class="content" style="padding: 0;">
+            <div class="chat-container">
+                <!-- Chat Sidebar -->
+                <div class="chat-sidebar">
+                    <div class="chat-search">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search conversations...">
+                    </div>
+                    <div class="chat-list">
+                        <div class="chat-item active">
+                            <img src="https://ui-avatars.com/api/?name=John+Doe&background=1E88E5&color=fff" alt="John Doe" class="chat-avatar">
+                            <div class="chat-item-info">
+                                <h4>John Doe</h4>
+                                <p>Thanks for the update...</p>
+                            </div>
+                            <span class="chat-time">10:30 AM</span>
+                        </div>
+                        <div class="chat-item">
+                            <img src="https://ui-avatars.com/api/?name=Jane+Smith&background=4CAF50&color=fff" alt="Jane Smith" class="chat-avatar">
+                            <div class="chat-item-info">
+                                <h4>Jane Smith</h4>
+                                <p>When can we schedule...</p>
+                            </div>
+                            <span class="chat-time">9:45 AM</span>
+                        </div>
+                        <div class="chat-item">
+                            <img src="https://ui-avatars.com/api/?name=Mike+Johnson&background=FF9800&color=fff" alt="Mike Johnson" class="chat-avatar">
+                            <div class="chat-item-info">
+                                <h4>Mike Johnson</h4>
+                                <p>I have a question about...</p>
+                            </div>
+                            <span class="chat-time">Yesterday</span>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="placeholder-content">
-                    <div class="placeholder-box">
-                        <i class="fas fa-image fa-3x"></i>
-                        <p>Content area for Chat</p>
-                        <span class="note">This section contains the main functionality and data display</span>
+                <!-- Chat Main Area -->
+                <div class="chat-main">
+                    <div class="chat-header">
+                        <img src="https://ui-avatars.com/api/?name=John+Doe&background=1E88E5&color=fff" alt="John Doe" class="chat-avatar">
+                        <div class="chat-header-info">
+                            <h3>John Doe</h3>
+                            <p><i class="fas fa-circle" style="color: #4CAF50; font-size: 8px;"></i> Online</p>
+                        </div>
+                    </div>
+
+                    <div class="chat-messages">
+                        <div class="message received">
+                            <div class="message-content">
+                                <p>Hello! I need help with my DTC application.</p>
+                                <span class="message-time">10:15 AM</span>
+                            </div>
+                        </div>
+                        <div class="message sent">
+                            <div class="message-content">
+                                <p>Of course! I'd be happy to help. What specific questions do you have?</p>
+                                <span class="message-time">10:18 AM</span>
+                            </div>
+                        </div>
+                        <div class="message received">
+                            <div class="message-content">
+                                <p>I'm not sure about the medical documentation requirements.</p>
+                                <span class="message-time">10:20 AM</span>
+                            </div>
+                        </div>
+                        <div class="message sent">
+                            <div class="message-content">
+                                <p>You'll need a completed T2201 form from your medical practitioner. I can send you the details.</p>
+                                <span class="message-time">10:22 AM</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chat-input-area">
+                        <input type="text" placeholder="Type a message..." class="chat-input">
+                        <button class="btn-send"><i class="fas fa-paper-plane"></i></button>
                     </div>
                 </div>
             </div>

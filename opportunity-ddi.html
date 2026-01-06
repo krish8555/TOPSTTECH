@@ -56,24 +56,43 @@
 
         <!-- Main Content -->
         <main class="content">
-            <div class="content-header">
-                <h1>DDI Add Popup</h1>
-                <p class="page-description">Add DDI information</p>
-            </div>
+            <div class="disability-form-container">
+                <div class="form-card" style="max-width: 600px;">
+                    <h1 class="form-title">Add DDI Information</h1>
+                    <p class="form-description">Enter Direct Deposit Information for client payments</p>
 
-            <div class="content-body">
-                <div class="info-card">
-                    <i class="fas fa-info-circle"></i>
-                    <h3>Page Information</h3>
-                    <p>This page is part of the Ourcba DTC application system. The full implementation includes form fields, data tables, and interactive elements based on the Figma design.</p>
-                </div>
+                    <form class="disability-form">
+                        <div class="form-group">
+                            <label for="account-holder">Account Holder Name*</label>
+                            <input type="text" id="account-holder" name="account-holder" placeholder="Enter account holder name" required>
+                        </div>
 
-                <div class="placeholder-content">
-                    <div class="placeholder-box">
-                        <i class="fas fa-image fa-3x"></i>
-                        <p>Content area for DDI Add Popup</p>
-                        <span class="note">This section contains the main functionality and data display</span>
-                    </div>
+                        <div class="form-group">
+                            <label for="bank-name">Bank Name*</label>
+                            <input type="text" id="bank-name" name="bank-name" placeholder="Enter bank name" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="transit">Transit Number*</label>
+                                <input type="text" id="transit" name="transit" placeholder="XXXXX" maxlength="5" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="institution">Institution Number*</label>
+                                <input type="text" id="institution" name="institution" placeholder="XXX" maxlength="3" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="account-number">Account Number*</label>
+                            <input type="text" id="account-number" name="account-number" placeholder="Enter account number" required>
+                        </div>
+
+                        <div class="form-row">
+                            <button type="button" class="btn-secondary">Cancel</button>
+                            <button type="submit" class="btn-next">Save DDI</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </main>

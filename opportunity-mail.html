@@ -57,22 +57,44 @@
         <!-- Main Content -->
         <main class="content">
             <div class="content-header">
-                <h1>Opportunity Mail</h1>
-                <p class="page-description">Email communications for opportunities</p>
+                <h1>Opportunity Email Communications</h1>
+                <button class="btn-add"><i class="fas fa-envelope"></i> Send Email</button>
             </div>
 
             <div class="content-body">
-                <div class="info-card">
-                    <i class="fas fa-info-circle"></i>
-                    <h3>Page Information</h3>
-                    <p>This page is part of the Ourcba DTC application system. The full implementation includes form fields, data tables, and interactive elements based on the Figma design.</p>
-                </div>
-
-                <div class="placeholder-content">
-                    <div class="placeholder-box">
-                        <i class="fas fa-image fa-3x"></i>
-                        <p>Content area for Opportunity Mail</p>
-                        <span class="note">This section contains the main functionality and data display</span>
+                <div class="table-card">
+                    <h3>Email Log</h3>
+                    <div class="table-wrapper">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Email ID</th>
+                                    <th>Recipient</th>
+                                    <th>Subject</th>
+                                    <th>Sent Date</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>#EMAIL-101</td>
+                                    <td>john.doe@email.com</td>
+                                    <td>DTC Application Follow-up</td>
+                                    <td>Jan 20, 2024</td>
+                                    <td><span class="status-badge completed">Sent</span></td>
+                                    <td><button class="btn-view">View</button></td>
+                                </tr>
+                                <tr>
+                                    <td>#EMAIL-102</td>
+                                    <td>jane.smith@email.com</td>
+                                    <td>Document Request</td>
+                                    <td>Jan 19, 2024</td>
+                                    <td><span class="status-badge approved">Read</span></td>
+                                    <td><button class="btn-view">View</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

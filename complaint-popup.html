@@ -56,24 +56,49 @@
 
         <!-- Main Content -->
         <main class="content">
-            <div class="content-header">
-                <h1>Complaint Popup</h1>
-                <p class="page-description">File a complaint form</p>
-            </div>
+            <div class="disability-form-container">
+                <div class="form-card" style="max-width: 600px;">
+                    <h1 class="form-title">File a Complaint</h1>
+                    <p class="form-description">Help us improve our service by reporting any issues</p>
 
-            <div class="content-body">
-                <div class="info-card">
-                    <i class="fas fa-info-circle"></i>
-                    <h3>Page Information</h3>
-                    <p>This page is part of the Ourcba DTC application system. The full implementation includes form fields, data tables, and interactive elements based on the Figma design.</p>
-                </div>
+                    <form class="disability-form">
+                        <div class="form-group">
+                            <label for="complaint-type">Complaint Type*</label>
+                            <select id="complaint-type" name="complaint-type" required>
+                                <option value="">Select type</option>
+                                <option value="service">Service Quality</option>
+                                <option value="delay">Processing Delay</option>
+                                <option value="communication">Communication Issue</option>
+                                <option value="technical">Technical Problem</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
 
-                <div class="placeholder-content">
-                    <div class="placeholder-box">
-                        <i class="fas fa-image fa-3x"></i>
-                        <p>Content area for Complaint Popup</p>
-                        <span class="note">This section contains the main functionality and data display</span>
-                    </div>
+                        <div class="form-group">
+                            <label for="priority">Priority*</label>
+                            <select id="priority" name="priority" required>
+                                <option value="">Select priority</option>
+                                <option value="high">High</option>
+                                <option value="medium">Medium</option>
+                                <option value="low">Low</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="description">Description*</label>
+                            <textarea id="description" name="description" rows="5" placeholder="Please provide details about your complaint..." required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="attachments">Attachments (Optional)</label>
+                            <input type="file" id="attachments" name="attachments" multiple>
+                        </div>
+
+                        <div class="form-row">
+                            <button type="button" class="btn-secondary">Cancel</button>
+                            <button type="submit" class="btn-next">Submit Complaint</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </main>
