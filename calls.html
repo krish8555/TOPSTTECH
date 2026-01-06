@@ -58,21 +58,54 @@
         <main class="content">
             <div class="content-header">
                 <h1>Calls</h1>
-                <p class="page-description">Call management dashboard</p>
+                <button class="btn-add"><i class="fas fa-plus"></i> New Call</button>
             </div>
 
             <div class="content-body">
-                <div class="info-card">
-                    <i class="fas fa-info-circle"></i>
-                    <h3>Page Information</h3>
-                    <p>This page is part of the Ourcba DTC application system. The full implementation includes form fields, data tables, and interactive elements based on the Figma design.</p>
-                </div>
-
-                <div class="placeholder-content">
-                    <div class="placeholder-box">
-                        <i class="fas fa-image fa-3x"></i>
-                        <p>Content area for Calls</p>
-                        <span class="note">This section contains the main functionality and data display</span>
+                <div class="table-card">
+                    <div class="table-wrapper">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Call ID</th>
+                                    <th>Client Name</th>
+                                    <th>Agent</th>
+                                    <th>Date & Time</th>
+                                    <th>Duration</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>#C-1001</td>
+                                    <td>John Doe</td>
+                                    <td>Agent Smith</td>
+                                    <td>Jan 20, 2024 10:30 AM</td>
+                                    <td>15:30</td>
+                                    <td><span class="status-badge completed">Completed</span></td>
+                                    <td><button class="btn-view">Details</button></td>
+                                </tr>
+                                <tr>
+                                    <td>#C-1002</td>
+                                    <td>Jane Smith</td>
+                                    <td>Agent Jones</td>
+                                    <td>Jan 20, 2024 2:00 PM</td>
+                                    <td>8:15</td>
+                                    <td><span class="status-badge completed">Completed</span></td>
+                                    <td><button class="btn-view">Details</button></td>
+                                </tr>
+                                <tr>
+                                    <td>#C-1003</td>
+                                    <td>Mike Johnson</td>
+                                    <td>Agent Brown</td>
+                                    <td>Jan 20, 2024 3:30 PM</td>
+                                    <td>-</td>
+                                    <td><span class="status-badge pending">Scheduled</span></td>
+                                    <td><button class="btn-view">Details</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

@@ -58,21 +58,97 @@
         <main class="content">
             <div class="content-header">
                 <h1>Agent Calls</h1>
-                <p class="page-description">Agent call records and history</p>
+                <div class="filter-group">
+                    <select class="filter-select">
+                        <option>All Agents</option>
+                        <option>Agent Smith</option>
+                        <option>Agent Jones</option>
+                    </select>
+                    <select class="filter-select">
+                        <option>This Week</option>
+                        <option>This Month</option>
+                        <option>All Time</option>
+                    </select>
+                </div>
             </div>
 
             <div class="content-body">
-                <div class="info-card">
-                    <i class="fas fa-info-circle"></i>
-                    <h3>Page Information</h3>
-                    <p>This page is part of the Ourcba DTC application system. The full implementation includes form fields, data tables, and interactive elements based on the Figma design.</p>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <i class="fas fa-phone stat-icon"></i>
+                        <div class="stat-info">
+                            <h3>Total Calls</h3>
+                            <p class="stat-value">245</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-clock stat-icon"></i>
+                        <div class="stat-info">
+                            <h3>Avg Duration</h3>
+                            <p class="stat-value">12:30</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-check-circle stat-icon success"></i>
+                        <div class="stat-info">
+                            <h3>Completed</h3>
+                            <p class="stat-value">230</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-times-circle stat-icon danger"></i>
+                        <div class="stat-info">
+                            <h3>Missed</h3>
+                            <p class="stat-value">15</p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="placeholder-content">
-                    <div class="placeholder-box">
-                        <i class="fas fa-image fa-3x"></i>
-                        <p>Content area for Agent Calls</p>
-                        <span class="note">This section contains the main functionality and data display</span>
+                <div class="table-card">
+                    <h3>Recent Calls</h3>
+                    <div class="table-wrapper">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Agent</th>
+                                    <th>Client</th>
+                                    <th>Phone</th>
+                                    <th>Date & Time</th>
+                                    <th>Duration</th>
+                                    <th>Status</th>
+                                    <th>Recording</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Agent Smith</td>
+                                    <td>John Doe</td>
+                                    <td>(555) 123-4567</td>
+                                    <td>Jan 20, 2024 10:30 AM</td>
+                                    <td>15:30</td>
+                                    <td><span class="status-badge completed">Completed</span></td>
+                                    <td><button class="btn-view"><i class="fas fa-play"></i></button></td>
+                                </tr>
+                                <tr>
+                                    <td>Agent Jones</td>
+                                    <td>Jane Smith</td>
+                                    <td>(555) 234-5678</td>
+                                    <td>Jan 20, 2024 11:00 AM</td>
+                                    <td>8:15</td>
+                                    <td><span class="status-badge completed">Completed</span></td>
+                                    <td><button class="btn-view"><i class="fas fa-play"></i></button></td>
+                                </tr>
+                                <tr>
+                                    <td>Agent Brown</td>
+                                    <td>Mike Johnson</td>
+                                    <td>(555) 345-6789</td>
+                                    <td>Jan 20, 2024 11:30 AM</td>
+                                    <td>-</td>
+                                    <td><span class="status-badge rejected">Missed</span></td>
+                                    <td>-</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
