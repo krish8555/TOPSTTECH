@@ -57,22 +57,79 @@
         <!-- Main Content -->
         <main class="content">
             <div class="content-header">
-                <h1>Django Administration</h1>
-                <p class="page-description">System administration interface</p>
+                <h1>System Administration</h1>
+                <button class="btn-add"><i class="fas fa-cog"></i> System Settings</button>
             </div>
 
             <div class="content-body">
-                <div class="info-card">
-                    <i class="fas fa-info-circle"></i>
-                    <h3>Page Information</h3>
-                    <p>This page is part of the Ourcba DTC application system. The full implementation includes form fields, data tables, and interactive elements based on the Figma design.</p>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <i class="fas fa-users stat-icon"></i>
+                        <div class="stat-info">
+                            <h3>Total Users</h3>
+                            <p class="stat-value">245</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-database stat-icon"></i>
+                        <div class="stat-info">
+                            <h3>DB Records</h3>
+                            <p class="stat-value">12.5K</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-server stat-icon success"></i>
+                        <div class="stat-info">
+                            <h3>System Status</h3>
+                            <p class="stat-value" style="font-size: 16px;">Online</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-clock stat-icon"></i>
+                        <div class="stat-info">
+                            <h3>Uptime</h3>
+                            <p class="stat-value" style="font-size: 16px;">99.9%</p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="placeholder-content">
-                    <div class="placeholder-box">
-                        <i class="fas fa-image fa-3x"></i>
-                        <p>Content area for Django Administration</p>
-                        <span class="note">This section contains the main functionality and data display</span>
+                <div class="table-card">
+                    <h3>System Modules</h3>
+                    <div class="table-wrapper">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Module</th>
+                                    <th>Version</th>
+                                    <th>Status</th>
+                                    <th>Last Updated</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>User Management</td>
+                                    <td>v2.4.1</td>
+                                    <td><span class="status-badge completed">Active</span></td>
+                                    <td>Jan 15, 2024</td>
+                                    <td><button class="btn-view">Manage</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Database</td>
+                                    <td>v3.2.0</td>
+                                    <td><span class="status-badge completed">Active</span></td>
+                                    <td>Jan 10, 2024</td>
+                                    <td><button class="btn-view">Manage</button></td>
+                                </tr>
+                                <tr>
+                                    <td>API Gateway</td>
+                                    <td>v1.8.5</td>
+                                    <td><span class="status-badge completed">Active</span></td>
+                                    <td>Jan 12, 2024</td>
+                                    <td><button class="btn-view">Manage</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

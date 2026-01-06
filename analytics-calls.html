@@ -58,21 +58,88 @@
         <main class="content">
             <div class="content-header">
                 <h1>Call Statistics</h1>
-                <p class="page-description">Call performance analytics</p>
+                <div class="filter-group">
+                    <select class="filter-select">
+                        <option>This Week</option>
+                        <option>This Month</option>
+                        <option>This Quarter</option>
+                    </select>
+                </div>
             </div>
 
             <div class="content-body">
-                <div class="info-card">
-                    <i class="fas fa-info-circle"></i>
-                    <h3>Page Information</h3>
-                    <p>This page is part of the Ourcba DTC application system. The full implementation includes form fields, data tables, and interactive elements based on the Figma design.</p>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <i class="fas fa-phone stat-icon"></i>
+                        <div class="stat-info">
+                            <h3>Total Calls</h3>
+                            <p class="stat-value">1,856</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-phone-volume stat-icon success"></i>
+                        <div class="stat-info">
+                            <h3>Answered</h3>
+                            <p class="stat-value">1,702</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-clock stat-icon"></i>
+                        <div class="stat-info">
+                            <h3>Avg Duration</h3>
+                            <p class="stat-value">14:32</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-star stat-icon warning"></i>
+                        <div class="stat-info">
+                            <h3>Avg Rating</h3>
+                            <p class="stat-value">4.7</p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="placeholder-content">
-                    <div class="placeholder-box">
-                        <i class="fas fa-image fa-3x"></i>
-                        <p>Content area for Call Statistics</p>
-                        <span class="note">This section contains the main functionality and data display</span>
+                <div class="table-card">
+                    <h3>Call Statistics by Agent</h3>
+                    <div class="table-wrapper">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Agent Name</th>
+                                    <th>Total Calls</th>
+                                    <th>Answered</th>
+                                    <th>Missed</th>
+                                    <th>Avg Duration</th>
+                                    <th>Rating</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Agent Smith</td>
+                                    <td>456</td>
+                                    <td>432</td>
+                                    <td>24</td>
+                                    <td>15:20</td>
+                                    <td>4.8</td>
+                                </tr>
+                                <tr>
+                                    <td>Agent Jones</td>
+                                    <td>398</td>
+                                    <td>378</td>
+                                    <td>20</td>
+                                    <td>13:45</td>
+                                    <td>4.7</td>
+                                </tr>
+                                <tr>
+                                    <td>Agent Brown</td>
+                                    <td>425</td>
+                                    <td>405</td>
+                                    <td>20</td>
+                                    <td>14:55</td>
+                                    <td>4.6</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

@@ -57,22 +57,44 @@
         <!-- Main Content -->
         <main class="content">
             <div class="content-header">
-                <h1>Group 238</h1>
-                <p class="page-description">Group management interface</p>
+                <h1>Group Management - 238</h1>
+                <button class="btn-add"><i class="fas fa-users"></i> Add Members</button>
             </div>
 
             <div class="content-body">
-                <div class="info-card">
-                    <i class="fas fa-info-circle"></i>
-                    <h3>Page Information</h3>
-                    <p>This page is part of the Ourcba DTC application system. The full implementation includes form fields, data tables, and interactive elements based on the Figma design.</p>
-                </div>
-
-                <div class="placeholder-content">
-                    <div class="placeholder-box">
-                        <i class="fas fa-image fa-3x"></i>
-                        <p>Content area for Group 238</p>
-                        <span class="note">This section contains the main functionality and data display</span>
+                <div class="table-card">
+                    <h3>Group Members</h3>
+                    <div class="table-wrapper">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Member ID</th>
+                                    <th>Name</th>
+                                    <th>Role</th>
+                                    <th>Join Date</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>#M-003</td>
+                                    <td>Mike Johnson</td>
+                                    <td>Administrator</td>
+                                    <td>Jan 2, 2024</td>
+                                    <td><span class="status-badge completed">Active</span></td>
+                                    <td><button class="btn-view">Edit</button></td>
+                                </tr>
+                                <tr>
+                                    <td>#M-004</td>
+                                    <td>Emily Davis</td>
+                                    <td>Member</td>
+                                    <td>Jan 8, 2024</td>
+                                    <td><span class="status-badge completed">Active</span></td>
+                                    <td><button class="btn-view">Edit</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

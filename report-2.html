@@ -58,21 +58,68 @@
         <main class="content">
             <div class="content-header">
                 <h1>Detailed Report</h1>
-                <p class="page-description">Comprehensive report analysis</p>
+                <button class="btn-add"><i class="fas fa-print"></i> Print Report</button>
             </div>
 
             <div class="content-body">
-                <div class="info-card">
-                    <i class="fas fa-info-circle"></i>
-                    <h3>Page Information</h3>
-                    <p>This page is part of the Ourcba DTC application system. The full implementation includes form fields, data tables, and interactive elements based on the Figma design.</p>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <i class="fas fa-file-alt stat-icon"></i>
+                        <div class="stat-info">
+                            <h3>Total Applications</h3>
+                            <p class="stat-value">1,247</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-check-circle stat-icon success"></i>
+                        <div class="stat-info">
+                            <h3>Approved</h3>
+                            <p class="stat-value">1,172</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-dollar-sign stat-icon success"></i>
+                        <div class="stat-info">
+                            <h3>Total Amount</h3>
+                            <p class="stat-value">$2.4M</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-percentage stat-icon"></i>
+                        <div class="stat-info">
+                            <h3>Success Rate</h3>
+                            <p class="stat-value">94%</p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="placeholder-content">
-                    <div class="placeholder-box">
-                        <i class="fas fa-image fa-3x"></i>
-                        <p>Content area for Detailed Report</p>
-                        <span class="note">This section contains the main functionality and data display</span>
+                <div class="table-card">
+                    <h3>Report Data</h3>
+                    <div class="table-wrapper">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Category</th>
+                                    <th>Count</th>
+                                    <th>Amount</th>
+                                    <th>Percentage</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Disability Tax Credit</td>
+                                    <td>856</td>
+                                    <td>$1,850,000</td>
+                                    <td>77%</td>
+                                </tr>
+                                <tr>
+                                    <td>Medical Expenses</td>
+                                    <td>316</td>
+                                    <td>$550,000</td>
+                                    <td>23%</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

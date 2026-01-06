@@ -56,23 +56,19 @@
 
         <!-- Main Content -->
         <main class="content">
-            <div class="content-header">
-                <h1>Popup Dialog</h1>
-                <p class="page-description">General purpose popup</p>
-            </div>
+            <div class="disability-form-container">
+                <div class="form-card" style="max-width: 500px;">
+                    <h1 class="form-title">Confirmation</h1>
+                    <p class="form-description">Please confirm your action</p>
 
-            <div class="content-body">
-                <div class="info-card">
-                    <i class="fas fa-info-circle"></i>
-                    <h3>Page Information</h3>
-                    <p>This page is part of the Ourcba DTC application system. The full implementation includes form fields, data tables, and interactive elements based on the Figma design.</p>
-                </div>
+                    <div class="popup-content">
+                        <i class="fas fa-info-circle" style="font-size: 48px; color: var(--primary-color); margin-bottom: 20px;"></i>
+                        <p style="text-align: center; color: var(--text-dark); margin-bottom: 30px;">Are you sure you want to proceed with this action? This cannot be undone.</p>
 
-                <div class="placeholder-content">
-                    <div class="placeholder-box">
-                        <i class="fas fa-image fa-3x"></i>
-                        <p>Content area for Popup Dialog</p>
-                        <span class="note">This section contains the main functionality and data display</span>
+                        <div class="form-row">
+                            <button type="button" class="btn-secondary">Cancel</button>
+                            <button type="button" class="btn-next">Confirm</button>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -55,24 +55,244 @@
         </aside>
 
         <!-- Main Content -->
-        <main class="content">
-            <div class="content-header">
-                <h1>Family Members</h1>
-                <p class="page-description">Manage family member information</p>
-            </div>
+        <main class="content" style="padding: 0;">
+            <div class="family-dashboard">
+                <!-- Client Info Header -->
+                <div class="client-header">
+                    <div class="client-title">
+                        <h2>Test Sanjay</h2>
+                        <div class="action-buttons">
+                            <button class="btn-action primary">Esther Review <i class="fas fa-chevron-down"></i></button>
+                            <button class="btn-action">Text <i class="fas fa-chevron-down"></i></button>
+                            <button class="btn-action">Email <i class="fas fa-chevron-down"></i></button>
+                            <span class="opportunity-id">Opportunities ID : 166471</span>
+                        </div>
+                    </div>
 
-            <div class="content-body">
-                <div class="info-card">
-                    <i class="fas fa-info-circle"></i>
-                    <h3>Page Information</h3>
-                    <p>This page is part of the Ourcba DTC application system. The full implementation includes form fields, data tables, and interactive elements based on the Figma design.</p>
+                    <div class="client-info-grid">
+                        <div class="info-col">
+                            <div class="info-item">
+                                <span class="info-label">Address</span>
+                                <span class="info-value">Lorem Ipsum Dolor</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">SIN</span>
+                                <span class="info-value">252309604</span>
+                            </div>
+                        </div>
+                        <div class="info-col">
+                            <div class="info-item">
+                                <span class="info-label">Phone</span>
+                                <span class="info-value">1234567890</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Adjustment</span>
+                                <span class="info-value primary">338</span>
+                            </div>
+                        </div>
+                        <div class="info-col">
+                            <div class="info-item">
+                                <span class="info-label">Email</span>
+                                <span class="info-value">mahsih@ourcba.org</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Fam/Kas</span>
+                                <span class="info-value primary">(338) / 1</span>
+                            </div>
+                        </div>
+                        <div class="info-col">
+                            <div class="info-item">
+                                <span class="info-label">Efile Status</span>
+                                <span class="info-value">Pre-1013</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Days</span>
+                                <span class="info-value">0 Stage 9 All</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="status-tags">
+                        <span class="tag-badge warning">Bankruptcy</span>
+                        <span class="tag-badge info">Insolvent</span>
+                        <span class="tag-badge success">Has Children</span>
+                        <span class="tag-badge danger">Has Tenant</span>
+                        <span class="tag-badge primary">Debt $2023</span>
+                    </div>
+
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <span class="year">2013</span>
+                            <span class="value">236</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="year">2014</span>
+                            <span class="value">-</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="year">2015</span>
+                            <span class="value">-</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="year">2016</span>
+                            <span class="value">-</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="year">2017</span>
+                            <span class="value">-</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="year">2018</span>
+                            <span class="value">-</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="year">2019</span>
+                            <span class="value">-</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="year">2020</span>
+                            <span class="value">-</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="year">2021</span>
+                            <span class="value">-</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="year">2022</span>
+                            <span class="value">-</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="year">2023</span>
+                            <span class="value">-</span>
+                        </div>
+                    </div>
+                    
+                    <div class="row-data">
+                        <div class="data-row">
+                            <span class="row-label">420</span>
+                            <span class="row-value">-</span>
+                            <span class="row-value">-</span>
+                            <span class="row-value">-</span>
+                            <span class="row-value">-</span>
+                            <span class="row-value">-</span>
+                            <span class="row-value">-</span>
+                            <span class="row-value">-</span>
+                            <span class="row-value">-</span>
+                            <span class="row-value">-</span>
+                            <span class="row-value">-</span>
+                            <span class="row-value">-</span>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="placeholder-content">
-                    <div class="placeholder-box">
-                        <i class="fas fa-image fa-3x"></i>
-                        <p>Content area for Family Members</p>
-                        <span class="note">This section contains the main functionality and data display</span>
+                <!-- Family Members Table -->
+                <div class="table-section">
+                    <h3>Family Members</h3>
+                    <div class="table-wrapper">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Opp. ID</th>
+                                    <th>Name</th>
+                                    <th>Relation Type</th>
+                                    <th>Relation To</th>
+                                    <th>Stage</th>
+                                    <th>Spider Report</th>
+                                    <th>Spider Logs</th>
+                                    <th>Disabled</th>
+                                    <th>Line 420</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>166471</td>
+                                    <td>Test, Sanjay</td>
+                                    <td>Self</td>
+                                    <td>Sanjay</td>
+                                    <td>Esther Review</td>
+                                    <td>Spider Report</td>
+                                    <td>Spider Logs</td>
+                                    <td>ADD</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>166472</td>
+                                    <td>Test, Sanjay</td>
+                                    <td>Self</td>
+                                    <td>Sanjay</td>
+                                    <td>Esther Review</td>
+                                    <td>Spider Report</td>
+                                    <td>Spider Logs</td>
+                                    <td>ADD</td>
+                                    <td>0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Notes Section (Right Side) -->
+                <div class="notes-panel">
+                    <div class="notes-header">
+                        <button class="btn-note primary">Add New Note</button>
+                        <button class="btn-note">Add New Manager Note</button>
+                        <button class="btn-note">Only Manager Notes</button>
+                    </div>
+
+                    <div class="notes-list">
+                        <div class="note-item">
+                            <div class="note-header">
+                                <span class="note-author">Besis Cooper</span>
+                                <span class="note-time">3h Ago</span>
+                                <span class="note-stage primary">Stage</span>
+                            </div>
+                            <p class="note-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ullamcorper purus a metus eget. Morbi quis orci purus.</p>
+                        </div>
+
+                        <div class="note-item">
+                            <div class="note-header">
+                                <span class="note-author">John Doe</span>
+                                <span class="note-time">5d Ago</span>
+                                <span class="note-stage primary">Stage 1</span>
+                            </div>
+                            <p class="note-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ullamcorper purus a metus eget. Morbi quis orci purus.</p>
+                        </div>
+
+                        <div class="note-item">
+                            <div class="note-header">
+                                <span class="note-author">Besis Cooper</span>
+                                <span class="note-time">7d Ago</span>
+                                <span class="note-stage warning">Stage 2</span>
+                            </div>
+                            <p class="note-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ullamcorper.</p>
+                        </div>
+
+                        <div class="note-item">
+                            <div class="note-header">
+                                <span class="note-author">Besis Cooper</span>
+                                <span class="note-time">7d Ago</span>
+                                <span class="note-stage danger">Stage 3</span>
+                            </div>
+                            <p class="note-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ullamcorper purus a metus eget. Morbi quis orci purus.</p>
+                        </div>
+
+                        <div class="note-item">
+                            <div class="note-header">
+                                <span class="note-author">Besis Cooper</span>
+                                <span class="note-time">3h Ago</span>
+                                <span class="note-stage success">Stage 4</span>
+                            </div>
+                            <p class="note-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ullamcorper purus a metus eget. Morbi quis orci purus.</p>
+                        </div>
+
+                        <div class="note-item">
+                            <div class="note-header">
+                                <span class="note-author">John Doe</span>
+                                <span class="note-time">5d Ago</span>
+                                <span class="note-stage info">Stage 5</span>
+                            </div>
+                            <p class="note-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ullamcorper purus a metus eget. Morbi quis orci purus.</p>
+                        </div>
                     </div>
                 </div>
             </div>

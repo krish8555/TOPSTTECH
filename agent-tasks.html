@@ -58,21 +58,90 @@
         <main class="content">
             <div class="content-header">
                 <h1>Agent Tasks</h1>
-                <p class="page-description">Task management for agents</p>
+                <button class="btn-add"><i class="fas fa-plus"></i> Create New Task</button>
             </div>
 
             <div class="content-body">
-                <div class="info-card">
-                    <i class="fas fa-info-circle"></i>
-                    <h3>Page Information</h3>
-                    <p>This page is part of the Ourcba DTC application system. The full implementation includes form fields, data tables, and interactive elements based on the Figma design.</p>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <i class="fas fa-tasks stat-icon"></i>
+                        <div class="stat-info">
+                            <h3>Total Tasks</h3>
+                            <p class="stat-value">45</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-hourglass-half stat-icon warning"></i>
+                        <div class="stat-info">
+                            <h3>In Progress</h3>
+                            <p class="stat-value">18</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-check-circle stat-icon success"></i>
+                        <div class="stat-info">
+                            <h3>Completed</h3>
+                            <p class="stat-value">27</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-exclamation-triangle stat-icon danger"></i>
+                        <div class="stat-info">
+                            <h3>Overdue</h3>
+                            <p class="stat-value">3</p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="placeholder-content">
-                    <div class="placeholder-box">
-                        <i class="fas fa-image fa-3x"></i>
-                        <p>Content area for Agent Tasks</p>
-                        <span class="note">This section contains the main functionality and data display</span>
+                <div class="table-card">
+                    <h3>Task List</h3>
+                    <div class="table-wrapper">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Task ID</th>
+                                    <th>Task Name</th>
+                                    <th>Agent</th>
+                                    <th>Client</th>
+                                    <th>Due Date</th>
+                                    <th>Priority</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>#TSK-401</td>
+                                    <td>Review T2201 Form</td>
+                                    <td>Agent Smith</td>
+                                    <td>John Doe</td>
+                                    <td>Jan 22, 2024</td>
+                                    <td><span class="status-badge danger">High</span></td>
+                                    <td><span class="status-badge pending">In Progress</span></td>
+                                    <td><button class="btn-view">View</button></td>
+                                </tr>
+                                <tr>
+                                    <td>#TSK-402</td>
+                                    <td>Follow-up Call</td>
+                                    <td>Agent Jones</td>
+                                    <td>Jane Smith</td>
+                                    <td>Jan 23, 2024</td>
+                                    <td><span class="status-badge warning">Medium</span></td>
+                                    <td><span class="status-badge pending">Pending</span></td>
+                                    <td><button class="btn-view">View</button></td>
+                                </tr>
+                                <tr>
+                                    <td>#TSK-403</td>
+                                    <td>Document Verification</td>
+                                    <td>Agent Brown</td>
+                                    <td>Mike Johnson</td>
+                                    <td>Jan 20, 2024</td>
+                                    <td><span class="status-badge approved">Low</span></td>
+                                    <td><span class="status-badge completed">Completed</span></td>
+                                    <td><button class="btn-view">View</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

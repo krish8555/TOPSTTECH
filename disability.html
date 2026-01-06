@@ -56,24 +56,39 @@
 
         <!-- Main Content -->
         <main class="content">
-            <div class="content-header">
-                <h1>Disability Information</h1>
-                <p class="page-description">Disability tax credit information form</p>
-            </div>
+            <div class="disability-form-container">
+                <div class="form-card">
+                    <h1 class="form-title">Effects of Your Medical Conditions</h1>
+                    <p class="form-subtitle">Help us understand your unique situation to maximize your benefits!</p>
+                    <p class="form-description">Tell us about your medical conditions and how they have impacted your daily life.</p>
 
-            <div class="content-body">
-                <div class="info-card">
-                    <i class="fas fa-info-circle"></i>
-                    <h3>Page Information</h3>
-                    <p>This page is part of the Ourcba DTC application system. The full implementation includes form fields, data tables, and interactive elements based on the Figma design.</p>
-                </div>
+                    <form class="disability-form">
+                        <div class="form-group">
+                            <label for="restricted-areas">What areas are you restricted due to your medical condition(s)?</label>
+                            <select id="restricted-areas" name="restricted-areas" required>
+                                <option value="">Select an option</option>
+                                <option value="vision" selected>Vision</option>
+                                <option value="hearing">Hearing</option>
+                                <option value="walking">Walking</option>
+                                <option value="speaking">Speaking</option>
+                                <option value="mental-functions">Mental Functions</option>
+                                <option value="feeding">Feeding</option>
+                                <option value="dressing">Dressing</option>
+                                <option value="elimination">Elimination (bowel or bladder functions)</option>
+                            </select>
+                        </div>
 
-                <div class="placeholder-content">
-                    <div class="placeholder-box">
-                        <i class="fas fa-image fa-3x"></i>
-                        <p>Content area for Disability Information</p>
-                        <span class="note">This section contains the main functionality and data display</span>
-                    </div>
+                        <div class="form-group">
+                            <label for="life-sustaining">Do you require life sustaining therapy to support a vital function?</label>
+                            <select id="life-sustaining" name="life-sustaining" required>
+                                <option value="">Select an option</option>
+                                <option value="yes" selected>Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn-next">Next</button>
+                    </form>
                 </div>
             </div>
         </main>

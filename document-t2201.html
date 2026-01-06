@@ -57,22 +57,52 @@
         <!-- Main Content -->
         <main class="content">
             <div class="content-header">
-                <h1>T2201 Form</h1>
-                <p class="page-description">Disability tax credit certificate</p>
+                <h1>T2201 Disability Tax Credit Certificate</h1>
+                <button class="btn-add"><i class="fas fa-download"></i> Download Form</button>
             </div>
 
             <div class="content-body">
-                <div class="info-card">
-                    <i class="fas fa-info-circle"></i>
-                    <h3>Page Information</h3>
-                    <p>This page is part of the Ourcba DTC application system. The full implementation includes form fields, data tables, and interactive elements based on the Figma design.</p>
-                </div>
-
-                <div class="placeholder-content">
-                    <div class="placeholder-box">
-                        <i class="fas fa-image fa-3x"></i>
-                        <p>Content area for T2201 Form</p>
-                        <span class="note">This section contains the main functionality and data display</span>
+                <div class="table-card">
+                    <h3>T2201 Form Management</h3>
+                    <div class="table-wrapper">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Form ID</th>
+                                    <th>Client Name</th>
+                                    <th>Submitted Date</th>
+                                    <th>Medical Practitioner</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>#T2201-001</td>
+                                    <td>John Doe</td>
+                                    <td>Jan 15, 2024</td>
+                                    <td>Dr. Sarah Smith</td>
+                                    <td><span class="status-badge approved">Approved</span></td>
+                                    <td><button class="btn-view">View</button></td>
+                                </tr>
+                                <tr>
+                                    <td>#T2201-002</td>
+                                    <td>Jane Smith</td>
+                                    <td>Jan 18, 2024</td>
+                                    <td>Dr. Michael Brown</td>
+                                    <td><span class="status-badge pending">Under Review</span></td>
+                                    <td><button class="btn-view">View</button></td>
+                                </tr>
+                                <tr>
+                                    <td>#T2201-003</td>
+                                    <td>Robert Wilson</td>
+                                    <td>Jan 20, 2024</td>
+                                    <td>Dr. Emily Davis</td>
+                                    <td><span class="status-badge completed">Submitted</span></td>
+                                    <td><button class="btn-view">View</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

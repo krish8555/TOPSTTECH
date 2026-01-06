@@ -58,21 +58,98 @@
         <main class="content">
             <div class="content-header">
                 <h1>Calls Administration</h1>
-                <p class="page-description">Administrative call management</p>
+                <div class="filter-group">
+                    <select class="filter-select">
+                        <option>All Departments</option>
+                        <option>Sales</option>
+                        <option>Support</option>
+                        <option>DTC Review</option>
+                    </select>
+                    <button class="btn-add"><i class="fas fa-download"></i> Export Report</button>
+                </div>
             </div>
 
             <div class="content-body">
-                <div class="info-card">
-                    <i class="fas fa-info-circle"></i>
-                    <h3>Page Information</h3>
-                    <p>This page is part of the Ourcba DTC application system. The full implementation includes form fields, data tables, and interactive elements based on the Figma design.</p>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <i class="fas fa-phone stat-icon"></i>
+                        <div class="stat-info">
+                            <h3>Total Calls (Today)</h3>
+                            <p class="stat-value">156</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-check-circle stat-icon success"></i>
+                        <div class="stat-info">
+                            <h3>Answered</h3>
+                            <p class="stat-value">142</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-times-circle stat-icon danger"></i>
+                        <div class="stat-info">
+                            <h3>Missed</h3>
+                            <p class="stat-value">14</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-percentage stat-icon"></i>
+                        <div class="stat-info">
+                            <h3>Answer Rate</h3>
+                            <p class="stat-value">91%</p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="placeholder-content">
-                    <div class="placeholder-box">
-                        <i class="fas fa-image fa-3x"></i>
-                        <p>Content area for Calls Administration</p>
-                        <span class="note">This section contains the main functionality and data display</span>
+                <div class="table-card">
+                    <h3>Call Administration Log</h3>
+                    <div class="table-wrapper">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Call ID</th>
+                                    <th>Client</th>
+                                    <th>Agent</th>
+                                    <th>Department</th>
+                                    <th>Date</th>
+                                    <th>Duration</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>#C-1001</td>
+                                    <td>John Doe</td>
+                                    <td>Agent Smith</td>
+                                    <td>DTC Review</td>
+                                    <td>Jan 20, 2024</td>
+                                    <td>15:30</td>
+                                    <td><span class="status-badge completed">Completed</span></td>
+                                    <td><button class="btn-view">View</button></td>
+                                </tr>
+                                <tr>
+                                    <td>#C-1002</td>
+                                    <td>Jane Smith</td>
+                                    <td>Agent Jones</td>
+                                    <td>Support</td>
+                                    <td>Jan 20, 2024</td>
+                                    <td>8:15</td>
+                                    <td><span class="status-badge completed">Completed</span></td>
+                                    <td><button class="btn-view">View</button></td>
+                                </tr>
+                                <tr>
+                                    <td>#C-1003</td>
+                                    <td>Mike Johnson</td>
+                                    <td>-</td>
+                                    <td>Sales</td>
+                                    <td>Jan 20, 2024</td>
+                                    <td>-</td>
+                                    <td><span class="status-badge rejected">Missed</span></td>
+                                    <td><button class="btn-view">View</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

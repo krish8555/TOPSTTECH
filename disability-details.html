@@ -56,24 +56,41 @@
 
         <!-- Main Content -->
         <main class="content">
-            <div class="content-header">
-                <h1>Disability Details</h1>
-                <p class="page-description">Detailed disability assessment form</p>
-            </div>
+            <div class="disability-form-container">
+                <div class="form-card">
+                    <form class="disability-form">
+                        <div class="form-group">
+                            <label for="ability-to-see">What best describes your ability to see?</label>
+                            <select id="ability-to-see" name="ability-to-see" required>
+                                <option value="">Select an option</option>
+                                <option value="legally-blind" selected>Is legally blind in both eyes, even when using application corrective devices or therapy</option>
+                                <option value="severe-restriction">Has severe restriction in seeing, even with corrective lenses</option>
+                                <option value="moderate-restriction">Has moderate restriction in seeing</option>
+                                <option value="no-restriction">Has no significant restriction</option>
+                            </select>
+                        </div>
 
-            <div class="content-body">
-                <div class="info-card">
-                    <i class="fas fa-info-circle"></i>
-                    <h3>Page Information</h3>
-                    <p>This page is part of the Ourcba DTC application system. The full implementation includes form fields, data tables, and interactive elements based on the Figma design.</p>
-                </div>
+                        <div class="form-group">
+                            <label for="limiting-factors">What factors limit your ability to see?</label>
+                            <div class="multi-select-wrapper">
+                                <select id="limiting-factors" name="limiting-factors" multiple class="multi-select-dropdown">
+                                    <option value="blurred-vision" selected>Blurred Vision</option>
+                                    <option value="peripheral-vision">Peripheral vision problem</option>
+                                    <option value="cataracts">Cataracts</option>
+                                    <option value="double-vision">Double vision</option>
+                                    <option value="glaucoma">Glaucoma</option>
+                                    <option value="macular-degeneration">Macular degeneration</option>
+                                    <option value="diabetic-retinopathy">Diabetic retinopathy</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <div class="selected-tags">
+                                    <span class="tag">Blurred Vision <i class="fas fa-times"></i></span>
+                                </div>
+                            </div>
+                        </div>
 
-                <div class="placeholder-content">
-                    <div class="placeholder-box">
-                        <i class="fas fa-image fa-3x"></i>
-                        <p>Content area for Disability Details</p>
-                        <span class="note">This section contains the main functionality and data display</span>
-                    </div>
+                        <button type="submit" class="btn-next">Save</button>
+                    </form>
                 </div>
             </div>
         </main>

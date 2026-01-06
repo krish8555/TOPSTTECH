@@ -58,21 +58,82 @@
         <main class="content">
             <div class="content-header">
                 <h1>Call Schedule</h1>
-                <p class="page-description">Schedule and manage calls</p>
+                <button class="btn-add"><i class="fas fa-plus"></i> Schedule New Call</button>
             </div>
 
             <div class="content-body">
-                <div class="info-card">
-                    <i class="fas fa-info-circle"></i>
-                    <h3>Page Information</h3>
-                    <p>This page is part of the Ourcba DTC application system. The full implementation includes form fields, data tables, and interactive elements based on the Figma design.</p>
-                </div>
+                <div class="table-card">
+                    <div class="filter-group" style="margin-bottom: 20px;">
+                        <select class="filter-select">
+                            <option>Today</option>
+                            <option>This Week</option>
+                            <option>This Month</option>
+                        </select>
+                        <select class="filter-select">
+                            <option>All Agents</option>
+                            <option>Agent Smith</option>
+                            <option>Agent Jones</option>
+                        </select>
+                    </div>
 
-                <div class="placeholder-content">
-                    <div class="placeholder-box">
-                        <i class="fas fa-image fa-3x"></i>
-                        <p>Content area for Call Schedule</p>
-                        <span class="note">This section contains the main functionality and data display</span>
+                    <h3>Scheduled Calls</h3>
+                    <div class="table-wrapper">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Schedule ID</th>
+                                    <th>Client Name</th>
+                                    <th>Agent</th>
+                                    <th>Date</th>
+                                    <th>Time</th>
+                                    <th>Purpose</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>#SCH-301</td>
+                                    <td>Sarah Johnson</td>
+                                    <td>Agent Smith</td>
+                                    <td>Jan 21, 2024</td>
+                                    <td>10:00 AM</td>
+                                    <td>DTC Assessment Review</td>
+                                    <td><span class="status-badge pending">Scheduled</span></td>
+                                    <td><button class="btn-view">Edit</button></td>
+                                </tr>
+                                <tr>
+                                    <td>#SCH-302</td>
+                                    <td>Michael Brown</td>
+                                    <td>Agent Jones</td>
+                                    <td>Jan 21, 2024</td>
+                                    <td>11:30 AM</td>
+                                    <td>Follow-up Call</td>
+                                    <td><span class="status-badge pending">Scheduled</span></td>
+                                    <td><button class="btn-view">Edit</button></td>
+                                </tr>
+                                <tr>
+                                    <td>#SCH-303</td>
+                                    <td>Emily Davis</td>
+                                    <td>Agent Brown</td>
+                                    <td>Jan 21, 2024</td>
+                                    <td>2:00 PM</td>
+                                    <td>Document Review</td>
+                                    <td><span class="status-badge approved">Confirmed</span></td>
+                                    <td><button class="btn-view">Edit</button></td>
+                                </tr>
+                                <tr>
+                                    <td>#SCH-304</td>
+                                    <td>Robert Wilson</td>
+                                    <td>Agent Smith</td>
+                                    <td>Jan 21, 2024</td>
+                                    <td>3:30 PM</td>
+                                    <td>Initial Consultation</td>
+                                    <td><span class="status-badge pending">Scheduled</span></td>
+                                    <td><button class="btn-view">Edit</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

@@ -56,24 +56,62 @@
 
         <!-- Main Content -->
         <main class="content">
-            <div class="content-header">
-                <h1>Add New Reassessment</h1>
-                <p class="page-description">Create new reassessment request</p>
-            </div>
+            <div class="disability-form-container">
+                <div class="form-card" style="max-width: 800px;">
+                    <h1 class="form-title">Add New Reassessment Request</h1>
+                    <p class="form-description">Submit a new reassessment request for disability tax credit review.</p>
 
-            <div class="content-body">
-                <div class="info-card">
-                    <i class="fas fa-info-circle"></i>
-                    <h3>Page Information</h3>
-                    <p>This page is part of the Ourcba DTC application system. The full implementation includes form fields, data tables, and interactive elements based on the Figma design.</p>
-                </div>
+                    <form class="disability-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="client-name-ra">Client Name*</label>
+                                <input type="text" id="client-name-ra" name="client-name" placeholder="Enter client name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="client-sin">SIN*</label>
+                                <input type="text" id="client-sin" name="client-sin" placeholder="XXX-XXX-XXX" required>
+                            </div>
+                        </div>
 
-                <div class="placeholder-content">
-                    <div class="placeholder-box">
-                        <i class="fas fa-image fa-3x"></i>
-                        <p>Content area for Add New Reassessment</p>
-                        <span class="note">This section contains the main functionality and data display</span>
-                    </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="reassessment-type">Reassessment Type*</label>
+                                <select id="reassessment-type" name="reassessment-type" required>
+                                    <option value="">Select type</option>
+                                    <option value="dtc">DTC Reassessment</option>
+                                    <option value="medical">Medical Review</option>
+                                    <option value="income">Income Review</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="tax-year">Tax Year*</label>
+                                <select id="tax-year" name="tax-year" required>
+                                    <option value="">Select year</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2020">2020</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="reason">Reason for Reassessment*</label>
+                            <textarea id="reason" name="reason" rows="4" placeholder="Provide detailed reason for the reassessment request" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="supporting-docs">Supporting Documents</label>
+                            <input type="file" id="supporting-docs" name="supporting-docs" multiple>
+                            <p class="form-hint">Upload any supporting medical or financial documents (PDF, JPG, PNG)</p>
+                        </div>
+
+                        <div class="form-row">
+                            <button type="button" class="btn-secondary">Cancel</button>
+                            <button type="submit" class="btn-next">Submit Request</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </main>
