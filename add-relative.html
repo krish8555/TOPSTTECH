@@ -56,24 +56,89 @@
 
         <!-- Main Content -->
         <main class="content">
-            <div class="content-header">
-                <h1>Add Relative</h1>
-                <p class="page-description">Add new family relative</p>
-            </div>
+            <div class="disability-form-container">
+                <div class="form-card" style="max-width: 800px;">
+                    <h1 class="form-title">Add A Family Member</h1>
+                    <p class="form-description">Boost your refund by adding family members you've helped or who've helped you. This way, our team can see the full picture of your financial support and get you the biggest refund possible!</p>
 
-            <div class="content-body">
-                <div class="info-card">
-                    <i class="fas fa-info-circle"></i>
-                    <h3>Page Information</h3>
-                    <p>This page is part of the Ourcba DTC application system. The full implementation includes form fields, data tables, and interactive elements based on the Figma design.</p>
-                </div>
+                    <form class="disability-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="first-name">First Name*</label>
+                                <input type="text" id="first-name" name="first-name" placeholder="Your First Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="last-name">Last Name*</label>
+                                <input type="text" id="last-name" name="last-name" placeholder="Your Last Name" required>
+                            </div>
+                        </div>
 
-                <div class="placeholder-content">
-                    <div class="placeholder-box">
-                        <i class="fas fa-image fa-3x"></i>
-                        <p>Content area for Add Relative</p>
-                        <span class="note">This section contains the main functionality and data display</span>
-                    </div>
+                        <div class="form-group">
+                            <label for="email">Email Address*</label>
+                            <input type="email" id="email" name="email" placeholder="yourname@website.com" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number*</label>
+                                <div class="phone-input-group">
+                                    <select class="country-code">
+                                        <option value="+91" selected>+91</option>
+                                        <option value="+1">+1</option>
+                                        <option value="+44">+44</option>
+                                    </select>
+                                    <input type="tel" id="phone" name="phone" placeholder="XXX - XXX - XXXX" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="dob">DOB</label>
+                                <input type="date" id="dob" name="dob" placeholder="Select Your DOB">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="relationship">Relationship</label>
+                            <select id="relationship" name="relationship">
+                                <option value="">Select relationship</option>
+                                <option value="father" selected>Father</option>
+                                <option value="mother">Mother</option>
+                                <option value="spouse">Spouse</option>
+                                <option value="child">Child</option>
+                                <option value="sibling">Sibling</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="disabilities">Do They Have Any Disabilities?</label>
+                            <select id="disabilities" name="disabilities">
+                                <option value="">Please select</option>
+                                <option value="no" selected>No</option>
+                                <option value="yes">Yes</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="living-together">Do you currently live with them, or have you lived with them in the past?</label>
+                            <select id="living-together" name="living-together">
+                                <option value="">Please select</option>
+                                <option value="no" selected>No</option>
+                                <option value="yes-currently">Yes, currently</option>
+                                <option value="yes-past">Yes, in the past</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="support-provided">Have they provided support to you in the past 10 years?</label>
+                            <select id="support-provided" name="support-provided">
+                                <option value="">Please select</option>
+                                <option value="no">No</option>
+                                <option value="yes">Yes</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn-next">Add Family Member</button>
+                    </form>
                 </div>
             </div>
         </main>
