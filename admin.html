@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Ourcba DTC</title>
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <header class="top-nav">
+        <div class="logo">
+            <div class="logo-circle">HM</div>
+        </div>
+        
+        <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search">
+            <select class="search-filter">
+                <option value="name">Name</option>
+                <option value="email">Email</option>
+                <option value="id">ID</option>
+                <option value="date">Date</option>
+            </select>
+            <button class="search-btn">Search</button>
+        </div>
+
+        <div class="user-info">
+            <span class="greeting">Hi, <strong>Karan</strong></span>
+            <img src="https://ui-avatars.com/api/?name=Karan&background=1E88E5&color=fff&size=40" alt="User Avatar" class="user-avatar">
+        </div>
+    </header>
+
+    <!-- Main Layout -->
+    <div class="main-layout">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <div class="nav-item">
+                    <i class="fas fa-comments"></i>
+                    <span class="nav-label">Messages</span>
+                </div>
+                
+                <div class="nav-item">
+                    <i class="fas fa-phone"></i>
+                    <span class="nav-label">Calls</span>
+                </div>
+                
+                <div class="nav-item">
+                    <i class="fas fa-file-alt"></i>
+                    <span class="nav-label">Documents</span>
+                </div>
+                
+                <div class="nav-item">
+                    <i class="fas fa-chart-bar"></i>
+                    <span class="nav-label">Analytics</span>
+                </div>
+                
+                <div class="nav-item active">
+                    <i class="fas fa-user"></i>
+                    <span class="nav-label">Admin</span>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="content">
+            <div class="content-header">
+                <h1>Admin</h1>
+            </div>
+
+            <div class="admin-panel">
+                <div class="menu-list">
+                    <div class="menu-item">users</div>
+                    <div class="menu-item active">Spider</div>
+                </div>
+
+                <div class="panel-content">
+                    <div class="empty-state">
+                        <i class="fas fa-folder-open"></i>
+                        <p>Select a menu item to view content</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Live Chat Button -->
+    <div class="chat-button">
+        <i class="fas fa-comment-dots"></i>
+        <span class="chat-text">Live Chat</span>
+    </div>
+</body>
+</html>
