@@ -58,21 +58,97 @@
         <main class="content">
             <div class="content-header">
                 <h1>Current Calls</h1>
-                <p class="page-description">Active calls monitoring</p>
+                <div class="filter-group">
+                    <button class="btn-add"><i class="fas fa-sync"></i> Refresh</button>
+                </div>
             </div>
 
             <div class="content-body">
-                <div class="info-card">
-                    <i class="fas fa-info-circle"></i>
-                    <h3>Page Information</h3>
-                    <p>This page is part of the Ourcba DTC application system. The full implementation includes form fields, data tables, and interactive elements based on the Figma design.</p>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <i class="fas fa-phone-volume stat-icon"></i>
+                        <div class="stat-info">
+                            <h3>Active Calls</h3>
+                            <p class="stat-value">8</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-clock stat-icon warning"></i>
+                        <div class="stat-info">
+                            <h3>Waiting</h3>
+                            <p class="stat-value">3</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-user-check stat-icon success"></i>
+                        <div class="stat-info">
+                            <h3>Connected</h3>
+                            <p class="stat-value">5</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-hourglass-half stat-icon"></i>
+                        <div class="stat-info">
+                            <h3>Avg Wait Time</h3>
+                            <p class="stat-value">2:15</p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="placeholder-content">
-                    <div class="placeholder-box">
-                        <i class="fas fa-image fa-3x"></i>
-                        <p>Content area for Current Calls</p>
-                        <span class="note">This section contains the main functionality and data display</span>
+                <div class="table-card">
+                    <h3>Live Call Queue</h3>
+                    <div class="table-wrapper">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Call ID</th>
+                                    <th>Client Name</th>
+                                    <th>Agent</th>
+                                    <th>Started At</th>
+                                    <th>Duration</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>#C-1101</td>
+                                    <td>Sarah Johnson</td>
+                                    <td>Agent Smith</td>
+                                    <td>12:15 PM</td>
+                                    <td>05:30</td>
+                                    <td><span class="status-badge completed">Connected</span></td>
+                                    <td><button class="btn-view"><i class="fas fa-eye"></i></button></td>
+                                </tr>
+                                <tr>
+                                    <td>#C-1102</td>
+                                    <td>Michael Chen</td>
+                                    <td>Agent Jones</td>
+                                    <td>12:18 PM</td>
+                                    <td>02:15</td>
+                                    <td><span class="status-badge completed">Connected</span></td>
+                                    <td><button class="btn-view"><i class="fas fa-eye"></i></button></td>
+                                </tr>
+                                <tr>
+                                    <td>#C-1103</td>
+                                    <td>Emily Davis</td>
+                                    <td>-</td>
+                                    <td>12:19 PM</td>
+                                    <td>01:30</td>
+                                    <td><span class="status-badge pending">Waiting</span></td>
+                                    <td><button class="btn-view"><i class="fas fa-phone"></i></button></td>
+                                </tr>
+                                <tr>
+                                    <td>#C-1104</td>
+                                    <td>Robert Wilson</td>
+                                    <td>Agent Brown</td>
+                                    <td>12:12 PM</td>
+                                    <td>08:45</td>
+                                    <td><span class="status-badge completed">Connected</span></td>
+                                    <td><button class="btn-view"><i class="fas fa-eye"></i></button></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

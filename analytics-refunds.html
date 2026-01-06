@@ -58,21 +58,88 @@
         <main class="content">
             <div class="content-header">
                 <h1>Refunds Analytics</h1>
-                <p class="page-description">Refund statistics and trends</p>
+                <div class="filter-group">
+                    <select class="filter-select">
+                        <option>This Year</option>
+                        <option>Last Year</option>
+                        <option>All Time</option>
+                    </select>
+                </div>
             </div>
 
             <div class="content-body">
-                <div class="info-card">
-                    <i class="fas fa-info-circle"></i>
-                    <h3>Page Information</h3>
-                    <p>This page is part of the Ourcba DTC application system. The full implementation includes form fields, data tables, and interactive elements based on the Figma design.</p>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <i class="fas fa-money-bill-wave stat-icon success"></i>
+                        <div class="stat-info">
+                            <h3>Total Refunds</h3>
+                            <p class="stat-value">$2.8M</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-users stat-icon"></i>
+                        <div class="stat-info">
+                            <h3>Clients Served</h3>
+                            <p class="stat-value">1,456</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-chart-line stat-icon primary"></i>
+                        <div class="stat-info">
+                            <h3>Avg Refund</h3>
+                            <p class="stat-value">$1,923</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-check-double stat-icon success"></i>
+                        <div class="stat-info">
+                            <h3>Approval Rate</h3>
+                            <p class="stat-value">94%</p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="placeholder-content">
-                    <div class="placeholder-box">
-                        <i class="fas fa-image fa-3x"></i>
-                        <p>Content area for Refunds Analytics</p>
-                        <span class="note">This section contains the main functionality and data display</span>
+                <div class="table-card">
+                    <h3>Refund Breakdown by Category</h3>
+                    <div class="table-wrapper">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Category</th>
+                                    <th>Applications</th>
+                                    <th>Approved</th>
+                                    <th>Total Amount</th>
+                                    <th>Avg Amount</th>
+                                    <th>Success %</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>DTC (Disability Tax Credit)</td>
+                                    <td>856</td>
+                                    <td>812</td>
+                                    <td>$1,850,000</td>
+                                    <td>$2,279</td>
+                                    <td>95%</td>
+                                </tr>
+                                <tr>
+                                    <td>Medical Expenses</td>
+                                    <td>425</td>
+                                    <td>398</td>
+                                    <td>$625,000</td>
+                                    <td>$1,570</td>
+                                    <td>94%</td>
+                                </tr>
+                                <tr>
+                                    <td>Reassessments</td>
+                                    <td>175</td>
+                                    <td>156</td>
+                                    <td>$325,000</td>
+                                    <td>$2,083</td>
+                                    <td>89%</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
