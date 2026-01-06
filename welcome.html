@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - Ourcba DTC</title>
+    <link rel="stylesheet" href="welcome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="welcome-box">
+            <h1 class="welcome-title">Welcome</h1>
+            <p class="welcome-subtitle">Let's get started on your refund!</p>
+            <p class="welcome-description">
+                Simply add your information to our application form, and we'll guide you through the process 
+                to ensure you receive the maximum refund you are entitled to.
+            </p>
+
+            <form class="welcome-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name*</label>
+                        <input 
+                            type="text" 
+                            id="firstName" 
+                            name="firstName" 
+                            placeholder="Your First Name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastName">Last Name*</label>
+                        <input 
+                            type="text" 
+                            id="lastName" 
+                            name="lastName" 
+                            placeholder="Your Last Name"
+                            required
+                        >
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address*</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="yourname@website.com"
+                        required
+                    >
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group phone-group">
+                        <label for="phone">Phone Number*</label>
+                        <div class="phone-input">
+                            <select class="country-code">
+                                <option value="+91">+91</option>
+                                <option value="+1">+1</option>
+                                <option value="+44">+44</option>
+                                <option value="+61">+61</option>
+                                <option value="+86">+86</option>
+                            </select>
+                            <input 
+                                type="tel" 
+                                id="phone" 
+                                name="phone" 
+                                placeholder="XXX - XXX - XXXX"
+                                required
+                            >
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sin">SIN*</label>
+                        <input 
+                            type="text" 
+                            id="sin" 
+                            name="sin" 
+                            placeholder="Your SIN"
+                            required
+                        >
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="medical">Do you have any medical conditions?</label>
+                    <select id="medical" name="medical">
+                        <option value="">Please select an option</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                        <option value="prefer-not">Prefer not to say</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="filingStatus">Are you filing your taxes as married or commonlaw?</label>
+                    <select id="filingStatus" name="filingStatus">
+                        <option value="">Please select an option</option>
+                        <option value="single">Single</option>
+                        <option value="married">Married</option>
+                        <option value="commonlaw">Common Law</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="children">Do you have any children?</label>
+                    <select id="children" name="children">
+                        <option value="">Select number of children</option>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4+">4+</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="familyHelp">How many people in your family are currently helping you or have helped you in the past?</label>
+                    <select id="familyHelp" name="familyHelp">
+                        <option value="">Please select an option</option>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3+">3+</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="submit-btn">Continue</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Live Chat Button -->
+    <div class="chat-button">
+        <i class="fas fa-comment-dots"></i>
+        <span class="chat-text">Live Chat</span>
+    </div>
+</body>
+</html>
